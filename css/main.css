@@ -1,0 +1,136 @@
+body {
+    background-image: url("../assets/Water.jpeg");
+    background-attachment: fixed;
+    padding: 20px;
+    margin: 60px auto;
+    width: 70%;
+    font:helvetica;
+}
+nav ul {
+    font: 'Sans-serif';
+    list-style: none;
+    font-weight: bold;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+footer ul {
+    font: 'Sans-serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 30px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    text-align:center;
+    font:helvetica;
+    font-size: 2em;
+    color: #4785b8;
+}
+p {
+    text-align:center;
+    font:helvetica;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    color: #E0E0E0;
+}
+span {
+    padding: 4px;
+    margin:10px;
+    border:2px solid grey;
+    border-radius: 5px;
+    display:inline-block;
+}
+#icon{
+    display:inline-block;
+}
+footer {
+    border-top: 2px solid #d5d5d5;
+    font-size: 1em;
+}
+
+ul.posts {
+    color: #E0E0E0
+    text-align:center;
+    margin: 20px auto 40px;
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    text-align:center;
+    font:helvetica;
+    color: #E0E0E0;
+    list-style: none;
+}
+
+@keyframes slider {
+
+0% {
+   left: 0;
+}
+
+20% {
+    left: 0;
+}
+
+25% {
+    left: -100%;
+}
+
+45% {
+    left: -100%;
+
+}
+
+50% {
+    left: -200%;
+
+}
+
+70% {
+    left: -200%;
+}
+
+75% {
+    left: -300%;
+}
+
+95% {
+    left: -300%;
+}
+
+100% {
+     left: -300%;
+
+}
+
+}
+
+#slider {
+	overflow: hidden;
+}
+
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s
+  slider infinite;
+}
